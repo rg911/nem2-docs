@@ -15,3 +15,8 @@ docker run --rm -v ${PWD}:/local swaggerapi/swagger-codegen-cli generate -i /loc
 brew install openapi-generator
 openapi-generator generate -i https://nemtech.github.io/_downloads/swagger2.yaml -g typescript-rxjs -t ts-rxjs-template/ -o ./nem2-js-sdk-dragon-rxjs/
 ```
+
+
+```
+openapi-generator generate -i ./openApi3.yaml -g typescript-node -t ts_template/ -o ./nem2-ts-sdk_elephant/ && rm -R nem2-ts-sdk_elephant/test
+```
